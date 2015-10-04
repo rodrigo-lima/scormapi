@@ -1,0 +1,340 @@
+Sep 30, 2015 2:36:13 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on port 8080
+Sep 30, 2015 2:36:13 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 396 ms
+Sep 30, 2015 2:36:13 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Sep 30, 2015 2:36:13 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.0.16
+Sep 30, 2015 2:36:13 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Sep 30, 2015 2:36:13 PM org.apache.catalina.core.StandardHost getDeployer
+INFO: Create Host deployer for direct deployment ( non-jmx ) 
+Sep 30, 2015 2:36:13 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/admin.xml
+Sep 30, 2015 2:36:13 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.util.LocalStrings', returnNull=true
+Sep 30, 2015 2:36:13 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.action.ActionResources', returnNull=true
+Sep 30, 2015 2:36:13 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.webapp.admin.ApplicationResources', returnNull=true
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/balancer.xml
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/manager.xml
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /adl from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/adl
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /jsp-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/jsp-examples
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path  from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/ROOT
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /servlets-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/servlets-examples
+Sep 30, 2015 2:36:14 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /tomcat-docs from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/tomcat-docs
+Sep 30, 2015 2:36:14 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on port 8080
+Sep 30, 2015 2:36:14 PM org.apache.jk.common.ChannelSocket init
+INFO: JK2: ajp13 listening on /0.0.0.0:8009
+Sep 30, 2015 2:36:14 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=1/7  config=/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/jk2.properties
+Sep 30, 2015 2:36:14 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 915 ms
+Sep 30, 2015 2:36:41 PM org.apache.coyote.http11.Http11Protocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:302)
+	at org.apache.coyote.http11.Http11Protocol.init(Http11Protocol.java:184)
+	at org.apache.coyote.tomcat5.CoyoteConnector.initialize(CoyoteConnector.java:1366)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:633)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:2413)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:532)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:553)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:397)
+
+Sep 30, 2015 2:36:41 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:8080
+	at org.apache.coyote.tomcat5.CoyoteConnector.initialize(CoyoteConnector.java:1368)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:633)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:2413)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:532)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:553)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:397)
+
+Sep 30, 2015 2:36:41 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 329 ms
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.0.16
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardHost getDeployer
+INFO: Create Host deployer for direct deployment ( non-jmx ) 
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/admin.xml
+Sep 30, 2015 2:36:41 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.util.LocalStrings', returnNull=true
+Sep 30, 2015 2:36:41 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.action.ActionResources', returnNull=true
+Sep 30, 2015 2:36:41 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.webapp.admin.ApplicationResources', returnNull=true
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/balancer.xml
+Sep 30, 2015 2:36:41 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/manager.xml
+Sep 30, 2015 2:36:42 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /adl from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/adl
+Sep 30, 2015 2:36:42 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /jsp-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/jsp-examples
+Sep 30, 2015 2:36:42 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path  from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/ROOT
+Sep 30, 2015 2:36:42 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /servlets-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/servlets-examples
+Sep 30, 2015 2:36:42 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /tomcat-docs from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/tomcat-docs
+Sep 30, 2015 2:36:42 PM org.apache.coyote.http11.Http11Protocol start
+SEVERE: Error starting endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:302)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.startEndpoint(PoolTcpEndpoint.java:319)
+	at org.apache.coyote.http11.Http11Protocol.start(Http11Protocol.java:217)
+	at org.apache.coyote.tomcat5.CoyoteConnector.start(CoyoteConnector.java:1436)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:528)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2343)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:297)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:398)
+
+Sep 30, 2015 2:36:42 PM org.apache.catalina.startup.Catalina start
+SEVERE: Catalina.start: 
+LifecycleException:  Protocol handler start failed: java.net.BindException: Address already in use:8080
+	at org.apache.coyote.tomcat5.CoyoteConnector.start(CoyoteConnector.java:1438)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:528)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2343)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:297)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:398)
+
+Sep 30, 2015 2:36:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 736 ms
+StandardServer.await: create[8005]: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:535)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:637)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:297)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:398)
+Sep 30, 2015 2:36:53 PM org.apache.coyote.http11.Http11Protocol init
+SEVERE: Error initializing endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:302)
+	at org.apache.coyote.http11.Http11Protocol.init(Http11Protocol.java:184)
+	at org.apache.coyote.tomcat5.CoyoteConnector.initialize(CoyoteConnector.java:1366)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:633)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:2413)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:532)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:553)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:397)
+
+Sep 30, 2015 2:36:53 PM org.apache.catalina.startup.Catalina load
+SEVERE: Catalina.start
+LifecycleException:  Protocol handler initialization failed: java.net.BindException: Address already in use:8080
+	at org.apache.coyote.tomcat5.CoyoteConnector.initialize(CoyoteConnector.java:1368)
+	at org.apache.catalina.core.StandardService.initialize(StandardService.java:633)
+	at org.apache.catalina.core.StandardServer.initialize(StandardServer.java:2413)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:532)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:553)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:260)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:397)
+
+Sep 30, 2015 2:36:53 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 317 ms
+Sep 30, 2015 2:36:53 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Sep 30, 2015 2:36:53 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.0.16
+Sep 30, 2015 2:36:53 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Sep 30, 2015 2:36:53 PM org.apache.catalina.core.StandardHost getDeployer
+INFO: Create Host deployer for direct deployment ( non-jmx ) 
+Sep 30, 2015 2:36:53 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/admin.xml
+Sep 30, 2015 2:36:53 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.util.LocalStrings', returnNull=true
+Sep 30, 2015 2:36:53 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.action.ActionResources', returnNull=true
+Sep 30, 2015 2:36:54 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.webapp.admin.ApplicationResources', returnNull=true
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/balancer.xml
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/manager.xml
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /adl from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/adl
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /jsp-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/jsp-examples
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path  from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/ROOT
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /servlets-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/servlets-examples
+Sep 30, 2015 2:36:54 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /tomcat-docs from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/tomcat-docs
+Sep 30, 2015 2:36:54 PM org.apache.coyote.http11.Http11Protocol start
+SEVERE: Error starting endpoint
+java.net.BindException: Address already in use:8080
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.initEndpoint(PoolTcpEndpoint.java:302)
+	at org.apache.tomcat.util.net.PoolTcpEndpoint.startEndpoint(PoolTcpEndpoint.java:319)
+	at org.apache.coyote.http11.Http11Protocol.start(Http11Protocol.java:217)
+	at org.apache.coyote.tomcat5.CoyoteConnector.start(CoyoteConnector.java:1436)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:528)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2343)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:297)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:398)
+
+Sep 30, 2015 2:36:54 PM org.apache.catalina.startup.Catalina start
+SEVERE: Catalina.start: 
+LifecycleException:  Protocol handler start failed: java.net.BindException: Address already in use:8080
+	at org.apache.coyote.tomcat5.CoyoteConnector.start(CoyoteConnector.java:1438)
+	at org.apache.catalina.core.StandardService.start(StandardService.java:528)
+	at org.apache.catalina.core.StandardServer.start(StandardServer.java:2343)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:581)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:297)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:398)
+
+Sep 30, 2015 2:36:54 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 764 ms
+StandardServer.await: create[8005]: java.net.BindException: Address already in use
+java.net.BindException: Address already in use
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:535)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:637)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:599)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:297)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:398)
+Sep 30, 2015 2:38:38 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Sep 30, 2015 2:38:38 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stoping http11 protocol on 8080 Catalina:type=ThreadPool,name=http8080
+Sep 30, 2015 2:39:26 PM org.apache.coyote.http11.Http11Protocol init
+INFO: Initializing Coyote HTTP/1.1 on port 8080
+Sep 30, 2015 2:39:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 334 ms
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/5.0.16
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHost start
+INFO: XML validation disabled
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHost getDeployer
+INFO: Create Host deployer for direct deployment ( non-jmx ) 
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/admin.xml
+Sep 30, 2015 2:39:26 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.util.LocalStrings', returnNull=true
+Sep 30, 2015 2:39:26 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.struts.action.ActionResources', returnNull=true
+Sep 30, 2015 2:39:26 PM org.apache.struts.util.PropertyMessageResources <init>
+INFO: Initializing, config='org.apache.webapp.admin.ApplicationResources', returnNull=true
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/balancer.xml
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Processing Context configuration file URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/Catalina/localhost/manager.xml
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /adl from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/adl
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /jsp-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/jsp-examples
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path  from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/ROOT
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /servlets-examples from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/servlets-examples
+Sep 30, 2015 2:39:26 PM org.apache.catalina.core.StandardHostDeployer install
+INFO: Installing web application at context path /tomcat-docs from URL file:/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/webapps/tomcat-docs
+Sep 30, 2015 2:39:26 PM org.apache.coyote.http11.Http11Protocol start
+INFO: Starting Coyote HTTP/1.1 on port 8080
+Sep 30, 2015 2:39:26 PM org.apache.jk.common.ChannelSocket init
+INFO: JK2: ajp13 listening on /0.0.0.0:8009
+Sep 30, 2015 2:39:26 PM org.apache.jk.server.JkMain start
+INFO: Jk running ID=0 time=0/6  config=/Users/rolima/Downloads/SCORM1_2_SampleRTE1_2_2/Sample_RTE_1_2_2/jakarta-tomcat/conf/jk2.properties
+Sep 30, 2015 2:39:26 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 805 ms
+Sep 30, 2015 2:40:12 PM org.apache.catalina.core.StandardService stop
+INFO: Stopping service Catalina
+Sep 30, 2015 2:40:12 PM org.apache.coyote.http11.Http11Protocol destroy
+INFO: Stoping http11 protocol on 8080 Catalina:type=ThreadPool,name=http8080
+Sep 30, 2015 2:41:27 PM org.apache.jk.common.ChannelSocket destroy
+INFO: Error shutting down the channel 8009 java.net.ConnectException: Operation timed out
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /balancer
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path 
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /tomcat-docs
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /jsp-examples
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /admin
+Sep 30, 2015 2:41:27 PM org.apache.catalina.logger.LoggerBase stop
+INFO: unregistering logger Catalina:type=Logger,path=/admin,host=localhost
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /adl
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /servlets-examples
+Sep 30, 2015 2:41:27 PM org.apache.catalina.core.StandardHostDeployer remove
+INFO: Removing web application at context path /manager
+Sep 30, 2015 2:41:27 PM org.apache.catalina.logger.LoggerBase stop
+INFO: unregistering logger Catalina:type=Logger,host=localhost
+Sep 30, 2015 2:41:27 PM org.apache.catalina.logger.LoggerBase stop
+INFO: unregistering logger Catalina:type=Logger
